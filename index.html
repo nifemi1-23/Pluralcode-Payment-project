@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+</head>
+<body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light" id="Nav">
+        <a class="navbar-brand" href="#">
+        <img src="images/PluraCode Logo 4.png" alt="logo">
+        </a>
+    </nav>
+
+    <div class="section1 text-center">
+        <h5 class="Pluralcode">Pluralcode Academy</h5>
+        <h3 class="Enrollment">Enrollment Form</h3>
+        <p class="para1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+    </div> 
+
+    <div class="form-center mt-5">
+      
+    </div>
+    <div class="container">
+      
+    </div>
+
+    <form>
+      <div class="form-row" >
+        <div class="col-md-3 col-sm-12 col-lg-3 offset-3">
+          <label class="label">First Name</label>
+          <input type="text" class="form-control Fname" id="input">
+        </div>
+        <div class="col-md-3 col-sm-12 col-lg-3">
+          <label class="label">Last Name</label>
+          <input type="text" class="form-control Lname" id="input">
+        </div>
+      </div>
+      <div class="form-row">
+          <div class="col-md-3 col-sm-12 col-lg-3 offset-3">
+            <label class="label">Email Address</label>
+            <input type="text" class="form-control email" placeholder="abc@abc.com" id="input">
+          </div>
+          <div class="col-md-3 col-sm-12 col-lg-3">
+            <label class="label">Mode of Learning</label>
+            <select class="form-control mode" id="input">
+              <option>Virtual</option>
+              <option>Physical</option>
+              <option>Exclusive</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-3 col-sm-12 col-lg-3 offset-3">
+              <label class="label">Course Of Interest</label>
+              <select class="form-control course" id="input">
+                
+              </select>
+            </div>
+          <div class="col-md-3 col-sm-12 col-lg-3">
+            <label class="label">Payment Choice</label>
+            <select class="form-control payChoice" id="input" onchange="showForm(event)">
+              <option disabled>choose option</option>
+              <option value="full-payment">Full Payment</option>
+              <option value="partial">partial payment</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-3 col-sm-12 col-lg-3 payForm offset-6" id="payForm">
+            <label class="label">Input Amount</label>
+            <input type="number" class="form-control inputAmount" onchange="myFunction()" placeholder="NGN" id="inputPay">
+          </div>
+        </div>
+        <div class="box-content mt-5">
+          <div class="agree text-center">
+            <p><i class="fa fa-circle" style="font-size: 10px; font-weight: 100;"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p><i class="fa fa-circle" style="font-size: 10px; font-weight: 100;"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p><i class="fa fa-circle" style="font-size: 10px; font-weight: 100;"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p><i class="fa fa-circle" style="font-size: 10px; font-weight: 100;"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <input class="form-check-input check" id="checkBox" onchange="showNewForm(event)" type="checkbox">
+                <label class="form-check-label" id="checkLabel">
+                    Agree
+                </label>
+
+                <div class="lastInputSec text-center" id="lastInput">
+                  <div class="form-group col-md-3">
+                    <label class="label">Payment Method</label>
+                    <select class="form-control form-control-md payMethod" id="S4input">
+                      <option value="Card">Card</option>
+                      <option value="Bank Transfer">Bank Transfer</option>
+                    </select>
+                  </div>
+                </div>
+        </div>
+
+        </div>
+        <div class="myButton text-center mt-5 mb-5">
+          <button class="buttonLast" onclick="getEitherPayment(event)">Continue</button>
+        </div>
+
+    </form>
+
+    
+
+    
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="text/javascript" src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="fontawesome-free-5.13.0-web/js/all.min.js"></script>
+</body>
+</html>
